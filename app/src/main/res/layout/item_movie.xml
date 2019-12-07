@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_photo"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/desc" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/txt_description"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/calendar"
+        tools:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_description"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/imageView4"
+        android:includeFontPadding="true"
+        android:text="@string/release_date"
+        android:textColor="#BA000000" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/txt_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txt_date"
+        app:srcCompat="@drawable/star"
+        tools:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_description"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="6dp"
+        android:layout_toEndOf="@id/imageView5"
+        android:includeFontPadding="true"
+        android:text="@string/rating"
+        android:textColor="#BA000000" />
+
+</RelativeLayout>
